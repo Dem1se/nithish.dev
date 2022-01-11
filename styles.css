@@ -10,6 +10,10 @@ body {
     font-size: 1em;
 }
 
+img {
+    max-width: 100%;
+}
+
 div * {
     margin: 0;
 }
@@ -23,6 +27,7 @@ div * {
     height: 100vh;
     background-color: #232425;
     gap: 3em;
+    font-size: 2em;
 }
 
 .content-paragraph {
@@ -65,26 +70,38 @@ div * {
     column-gap: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+.icon {
+    width: 48px;
+    width: 48px;
+}
+
+/* not mobile device */
+@media only screen and (-webkit-device-pixel-ratio: 1) {
 
     html,
     body {
-        padding: 0;
-        margin: 0;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .container {
-        padding: 0;
-    }
-
-    .content-paragraph {
         font-size: 1em;
-        width: 70ch;
-        max-width: 100%;
     }
 
-    .signature {
+    .icon {
+        width: 24px;
+        width: 24px;
+    }
+
+    /* .content-paragraph {
         text-align: left;
+    } */
+}
+
+/* width over 768 and not mobile device */
+@media only screen and (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
+
+    html,
+    body {
+        font-size: 1.1em;
     }
 }
