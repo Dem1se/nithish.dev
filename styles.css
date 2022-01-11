@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 html,
 body {
     padding: 0;
@@ -5,7 +7,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: #A8A8B2;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 div * {
@@ -23,10 +25,12 @@ div * {
     gap: 3em;
 }
 
-.description {
-    width: 70ch;
-    max-width: 100%;
+.content-paragraph {
+    width: 90%;
+    max-width: 70ch;
     text-align: justify;
+    font-size: 1em;
+    padding: 0 .5em;
 }
 
 .introduction {
@@ -37,6 +41,7 @@ div * {
 }
 
 .signature {
+    text-align: center;
     font-size: 2em;
     padding: .5em 0;
 }
@@ -46,7 +51,7 @@ div * {
 }
 
 .designation {
-    font-family: "Century Gothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.5em;
     padding: 0 0 0.5em 0;
@@ -58,4 +63,28 @@ div * {
     align-content: center;
     padding: .5em 0;
     column-gap: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .content-paragraph {
+        font-size: 1em;
+        width: 70ch;
+        max-width: 100%;
+    }
+
+    .signature {
+        text-align: left;
+    }
 }
