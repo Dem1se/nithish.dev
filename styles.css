@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 html,
 body {
@@ -33,9 +34,10 @@ div * {
 .content-paragraph {
     width: 90%;
     max-width: 70ch;
-    text-align: justify;
+    text-align: left;
     font-size: 1em;
     padding: 0 .5em;
+    /* font-family: "DM Sans"; */
 }
 
 .introduction {
@@ -43,6 +45,7 @@ div * {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "DM Sans";
 }
 
 .signature {
@@ -52,14 +55,14 @@ div * {
 }
 
 .name {
+    font-family: "Merriweather";
     font-weight: 600;
 }
 
 .designation {
-    font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "DM Sans";
     line-height: 1.5em;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 1em 0;
 }
 
 .channels {
@@ -76,13 +79,10 @@ div * {
 }
 
 @media only screen and (min-width: 600px) {
-
     html,
     body {
         font-size: 1em;
     }
-
-    
 
     .channels {
         padding: 0;
