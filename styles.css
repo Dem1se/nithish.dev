@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+:root {
+    --forground: #A8A8B2;
+    --background: #232425
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    color: #A8A8B2;
+    color: var(--forground);
     font-size: 1em;
 }
 
@@ -26,7 +31,7 @@ div * {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: #232425;
+    background-color: var(--background);
     gap: 3em;
     font-size: 1em;
 }
@@ -78,6 +83,31 @@ div * {
     width: 24px;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--background);
+    background-color: var(--forground);
+    width: 6em;
+    height: 2.2em;
+    border-radius: .2em;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 600;
+    padding: .1em .2em;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 600px) {
     html,
     body {
@@ -86,6 +116,10 @@ div * {
 
     .channels {
         padding: 0;
+    }
+
+    .button-container {
+        flex-direction: row;
     }
 }
 
