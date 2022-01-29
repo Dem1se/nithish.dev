@@ -3,7 +3,8 @@
 
 :root {
     --forground: #A8A8B2;
-    --background: #232425
+    --forground-active: #bdbdc7;
+    --background: #232425;
 }
 
 html,
@@ -88,6 +89,10 @@ div * {
     flex-direction: column;
 }
 
+.button-container a {
+    text-decoration: none;
+}
+
 .button {
     display: flex;
     flex-direction: row;
@@ -104,9 +109,11 @@ div * {
     padding: .1em .2em;
 }
 
-.button-container a {
-    text-decoration: none;
+.button:hover, .button:active, .button:focus {
+    box-shadow: 0 1px 1px 1px var(--forground);
+    background-color: var(--forground-active);
 }
+
 
 @media only screen and (min-width: 600px) {
     html,
